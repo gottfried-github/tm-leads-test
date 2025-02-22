@@ -1,7 +1,7 @@
-.pageContainer {
+/* .pageContainer {
   display: grid;
   grid-template-columns: 1fr minmax(300px, 1280px) 1fr;
-}
+} */
 
 /*
 .pageWidth {
