@@ -4,29 +4,36 @@ import Checkmark from '../icons/Checkmark'
 import styles from './TarifsSection.module.css'
 
 const TarifsSection = () => {
-  const [isSpotVisible, setIsSpotVisible] = useState(false)
+  const [isFuturesVisible, setIsFuturesVisible] = useState(false)
 
   const handleStandartClick = () => {
-    setIsSpotVisible(false)
+    setIsFuturesVisible(false)
   }
 
   const handleSpotClick = () => {
-    setIsSpotVisible(true)
+    setIsFuturesVisible(true)
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.contentContainer}>
+        <h2 className={styles.sectionTitle}>тарифы</h2>
         <div className={styles.buttonsContainer}>
-          <button className={styles.button} onClick={handleStandartClick}>
-            Standart
+          <button
+            className={`${styles.button} ${isFuturesVisible ? '' : styles.buttonActive}`}
+            onClick={handleStandartClick}
+          >
+            спот
           </button>
-          <button className={styles.button} onClick={handleSpotClick}>
-            Spot
+          <button
+            className={`${styles.button} ${isFuturesVisible ? styles.buttonActive : ''}`}
+            onClick={handleSpotClick}
+          >
+            фьючерс
           </button>
         </div>
         <div className={styles.infoContainer}>
-          <div className={`${styles.infoEntry} ${isSpotVisible ? '' : styles.visible}`}>
+          <div className={`${styles.infoEntry} ${isFuturesVisible ? '' : styles.visible}`}>
             <div className={`${styles.infoPlan} ${styles.infoStandart}`}>
               <div className={styles.planContent}>
                 <h3 className={styles.planHeading}>Standart</h3>
@@ -132,7 +139,7 @@ const TarifsSection = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.infoEntry} ${isSpotVisible ? styles.visible : ''}`}>
+          <div className={`${styles.infoEntry} ${isFuturesVisible ? styles.visible : ''}`}>
             <div className={`${styles.infoPlan} ${styles.infoStandart}`}>
               <div className={styles.planContent}>
                 <h3 className={styles.planHeading}>Standart</h3>
