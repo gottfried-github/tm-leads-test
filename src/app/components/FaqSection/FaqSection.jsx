@@ -5,6 +5,7 @@ const FaqSection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.contentContainer}>
+        <h2 className={styles.title}>Часто задаваемые вопросы</h2>
         <FaqQuestion
           question={'Что такое TradeBlade'}
           answer={
