@@ -3,8 +3,11 @@
   --black: #171717;
   --green-0: rgba(53, 255, 158, 1);
   --blue-0: rgba(96, 115, 161, 1);
+  --blue-1-transparent: rgba(87, 225, 255, 0.2);
+  --blue-1: rgba(87, 225, 255, 1);
   --dark-blue-0: rgba(67, 79, 112, 1);
   --dark-blue-1: rgba(3, 7, 24, 1);
+  --purple-0: rgba(106, 84, 255, 1);
 }
 
 html,

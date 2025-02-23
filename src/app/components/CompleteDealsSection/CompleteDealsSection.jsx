@@ -4,7 +4,7 @@ import styles from './CompleteDealsSection.module.css'
 
 const CompleteDealsSection = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.titleBlock}>
         <h2 className={styles.title}>Прошедшие сделки</h2>
         <div className={styles.subtitleContainer}>
@@ -13,7 +13,7 @@ const CompleteDealsSection = () => {
         </div>
       </div>
       <Carousel />
-    </div>
+    </section>
   )
 }
 
