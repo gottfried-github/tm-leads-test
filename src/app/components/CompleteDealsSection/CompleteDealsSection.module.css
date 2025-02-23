@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+
+  padding: 96px 0 118px 0;
+
+  @media (min-width: 1312px) {
+    grid-template-columns: 1fr minmax(300px, 1280px) 1fr;
+  }
+}
+
+.titleBlock {
+  grid-column: 2;
+  margin-bottom: 72px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  color: var(--white);
+
+  text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
+.subtitleContainer {
+  display: flex;
+  align-items: center;
+
+  column-gap: 4px;
+
+  color: var(--green-0);
+}
+
+.subtitleText {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -4%;
+}

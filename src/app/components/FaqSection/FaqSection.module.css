@@ -1,0 +1,37 @@
+.container {
+  padding: 56px 0;
+  background-color: var(--white);
+  
+  @media (min-width: 878px) {
+    padding: 96px 0;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  margin: 0 16px;
+
+  @media (min-width: 878px) {
+    margin: 0 auto;
+    max-width: 846px;
+  }
+}
+
+.title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+  
+  @media (min-width: 878px) {
+    font-size: 44px;
+    line-height: 56px;
+    margin-bottom: 64px;
+  }
+}
