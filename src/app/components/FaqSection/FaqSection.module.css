@@ -1,7 +1,17 @@
 .container {
-  display: flex;
-  flex-direction: column;
-
   padding: 35px 0;
   background-color: var(--white);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  margin: 0 16px;
+
+  @media (min-width: 878px) {
+    margin: 0 auto;
+    max-width: 846px;
+  }
 }

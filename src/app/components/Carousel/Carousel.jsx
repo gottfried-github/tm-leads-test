@@ -51,11 +51,11 @@ const initializeCarousel = (
   // initialize slider position
   const sliderValue = calculateSliderValue(swiperRef.current.swiper.translate, invisibleAreaWidth)
 
-  console.log(
-    'initializeCarousel, swiperRef.current.swiper.translate:',
-    swiperRef.current.swiper.translate
-  )
-  console.log('initializeCarousel, sliderValue:', sliderValue)
+  // console.log(
+  //   'initializeCarousel, swiperRef.current.swiper.translate:',
+  //   swiperRef.current.swiper.translate
+  // )
+  // console.log('initializeCarousel, sliderValue:', sliderValue)
   setSliderValue([sliderValue])
 }
 
@@ -120,11 +120,11 @@ const Carousel = () => {
     swiperRef.current.addEventListener('swipersettranslate', ev => {
       const [swiper, translate] = ev.detail
 
-      console.log('swipersettranslate, invisibleAreaWidth:', invisibleAreaWidth)
+      // console.log('swipersettranslate, invisibleAreaWidth:', invisibleAreaWidth)
 
       const sliderValue = calculateSliderValue(translate, invisibleAreaWidth)
 
-      console.log('swipersettranslate, sliderValue:', sliderValue)
+      // console.log('swipersettranslate, sliderValue:', sliderValue)
 
       // console.log('swiper, on setTranslate - isSwiperTouched:', isSwiperTouched)
       // if (!isSwiperTouched) return
