@@ -7,6 +7,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import NumbersSection from './components/NumbersSection/NumbersSection'
 import CompleteDealsSection from './components/CompleteDealsSection/CompleteDealsSection'
 import AboutSection from './components/AboutSection/AboutSection'
+import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection'
 import FaqSection from './components/FaqSection/FaqSection'
 import TarifsSection from './components/TarifsSection/TarifsSection'
 import styles from './page.module.css'
@@ -32,6 +33,7 @@ export default function Home() {
         <CompleteDealsSection />
         <AboutSection />
         <TarifsSection />
+        <TestimonialsSection />
         <FaqSection />
       </main>
       {isMobileMenuOpen ? <MobileMenu onClose={handleMenuClose} /> : null}
