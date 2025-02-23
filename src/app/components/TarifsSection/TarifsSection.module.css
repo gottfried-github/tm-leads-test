@@ -1,0 +1,244 @@
+.container {
+  padding: 210px 0 44px 0;
+  color: var(--white);
+  border-bottom: 1px solid var(--grey-1);
+
+  @media (min-width: 878px) {
+    padding: 250px 0 44px 0;
+  }
+  
+  @media (min-width: 1312px) {
+    padding: 96px 0;
+  }
+}
+
+.contentContainer {
+  margin: 0 16px;
+
+  @media (min-width: 878px) {
+    margin: 0 auto;
+    max-width: 846px;
+  }
+}
+
+.sectionTitle {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  
+  @media (min-width: 878px) {
+    font-size: 44px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+
+  column-gap: 4px;
+  margin-bottom: 24px;
+  padding: 4px;
+
+  background-color: var(--purple-0);
+  border-radius: 4px;
+
+  @media (min-width: 878px) {
+    margin-bottom: 44px;
+    width: 414px;
+  }
+}
+
+.button {
+  flex-grow: 1;
+  padding: 8px 0;
+
+  background-color: transparent;
+  color: var(--blue-1);
+  
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 4px;
+
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.button.buttonActive {
+  background-color: var(--blue-1);
+  color: var(--dark-blue-1);
+}
+
+.infoContainer {
+  display: flex;
+  position: relative;
+}
+
+.infoEntry {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+
+  /* hidden styles, begin */
+  visibility: hidden;
+  opacity: 0;
+  top: -9999px;
+  left: -9999px;
+  /* margin-top: -9999px;
+  margin-left: -9999px; */
+
+  transition: opacity 0.3s ease-in, visibility 0s 0.3s, top 0s 0.3s, left 0s 0.3s;
+  /* transition: opacity 0.3s ease-in, visibility 0s 0.3s, margin 0s 0.3s; */
+  /* hidden styles, end */
+
+  @media (min-width: 878px) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+
+.infoEntry.visible {
+  /* visible styles, begin */
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  /* margin-top: 0px;
+  margin-left: 0px; */
+
+  transition: opacity 0.3s ease-in;
+  /* visible styles, end */
+}
+
+.infoEntry.visible:nth-child(2) {
+  left: -100%;
+}
+
+.infoPlan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid var(--purple-0);
+  border-radius: 8px;
+  
+  @media (min-width: 878px) {
+    width: 413px;
+  }
+}
+
+.infoVip {
+  background-color: var(--purple-0);
+}
+
+.planHeading {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+  
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 56px;
+
+  text-transform: uppercase;
+}
+
+.planFeatureContainer {
+  padding: 8px 24px;
+  border-bottom: 1px dotted var(--white);
+}
+
+.planFeature {
+  display: flex;
+  align-items: baseline;
+  column-gap: 10px;
+}
+
+.planFeatureCheckmark {
+  flex-shrink: 0;
+}
+
+.planFooter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  margin-top: 40px;
+  padding: 0 24px 24px 24px;
+}
+
+.planPriceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.planPriceBlock {
+  display: flex;
+  column-gap: 4px;
+}
+
+.planPrice {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.planDiscount {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: -4%;
+  color: var(--green-0);
+}
+
+.planPeriod {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+
+  background-color: var(--white-transparent-0);
+  padding: 6px 5px 6px 8px;
+  border-radius: 4px;
+}
+
+.planButton {
+  padding: 8px 0;
+
+  background-color: var(--blue-1);
+  color: var(--dark-blue-1);
+  box-shadow: 0px 0px 4px 0px var(--blue-1);
+
+  border: 1.5px solid var(--blue-1);
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.planButton:hover {
+  color: var(--blue-1);
+  background-color: var(--blue-1-transparent);
+}
+
+.planButtonHeading {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.planButtonSubtitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}

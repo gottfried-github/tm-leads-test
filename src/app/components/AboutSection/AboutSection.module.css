@@ -1,0 +1,158 @@
+.sectionFigureContainer {
+  display: flex;
+  position: relative;
+  left: -300px;
+  top: 30px;
+  margin-top: -30px;
+
+  @media (min-width: 890px) {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+  }
+}
+
+.section {
+  height: 480px;
+
+  padding-top: 56px;
+  padding-bottom: 92px;
+  background-color: var(--white);
+
+  @media (min-width: 1312px) {
+    height: unset;
+  }
+}
+
+.sectionContent {
+  display: grid;
+  row-gap: 40px;
+  margin: 0 16px;
+
+  @media (min-width: 376px) {
+    max-width: 344px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1312px) {
+    grid-template-columns: 1fr 1fr;
+    /* margin: 0 auto; */
+    max-width: 1280px;
+  }
+}
+
+.sectionInfo {
+  @media (min-width: 1312px) {
+    width: 414px;
+  }
+}
+
+.infoTitle {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+  @media (min-width: 1312px) {
+    font-size: 44px;
+    line-height: 56px;  
+    margin-bottom: 40px;
+  }
+}
+
+.infoDescriptionParagraph:not(:first-child) {
+  margin: 20px 0;
+}
+
+.formSection {
+  align-self: flex-end;
+
+  padding: 16px;
+
+  background-color: var(--purple-0);
+  border-radius: 4px;
+
+  @media (min-width: 1312px) {
+    padding: 32px 66px 40px 66px;
+  }
+}
+
+.formSectionTitle {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: -4%;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+
+  @media (min-width: 1312px) {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+}
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  
+  /* margin-bottom: 12px; */
+  padding: 4px;
+  
+  border-radius: 4px;
+
+  @media (min-width: 1312px) {
+    flex-direction: row;
+    background-color: var(--purple-1);
+  }
+}
+
+.emailFormButton {
+  padding: 16px 24px;
+
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--dark-blue-1);
+
+  border: 1.5px solid var(--blue-1);
+  border-radius: 4px;
+  background-color: var(--blue-1);
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.emailFormButton:hover {
+  color: var(--blue-1);
+  background-color: var(--blue-1-transparent);
+}
+
+.emailInputContainer {
+  flex-grow: 1;
+  display: flex;
+
+  padding: 16px 20px;
+
+  background-color: var(--purple-1);
+  border-radius: 4px;
+
+  @media (min-width: 1312px) {
+    background-color: transparent;
+  }
+}
+
+.emailInput {
+  flex-grow: 1;
+  
+  color: var(--white);
+  line-height: 20px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  
+  background-color: transparent;
+  border: none;
+}

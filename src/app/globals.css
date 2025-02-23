@@ -1,27 +1,36 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --white: #ffffff;
+  --white-transparent-0: rgba(255, 255, 255, 0.2);
+  --black: #171717;
+  --grey-0: rgba(234, 239, 240, 1);
+  --grey-1: rgba(217, 217, 217, 0.4);
+  --grey-2: rgba(234, 239, 240, 0.2);
+  --grey-3: rgba(165, 174, 188, 1);
+  --green-0: rgba(53, 255, 158, 1);
+  --blue-0: rgba(96, 115, 161, 1);
+  --blue-1-transparent: rgba(87, 225, 255, 0.2);
+  --blue-1: rgba(87, 225, 255, 1);
+  --dark-blue-0: rgba(67, 79, 112, 1);
+  --dark-blue-1: rgba(3, 7, 24, 1);
+  --dark-blue-2: rgba(32, 26, 79, 1);
+  --purple-0: rgba(106, 84, 255, 1);
+  --purple-1: rgba(74, 59, 179, 1);
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--black);
+  background: var(--dark-blue-1);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
 }
 
 * {
@@ -35,8 +44,10 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+swiper-slide {
+  width: 300px;
+}
+
+.rich-content p:not(:first-child) {
+  margin: 20px 0;
 }

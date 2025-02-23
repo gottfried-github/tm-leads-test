@@ -1,0 +1,94 @@
+.sectionFigureContainer {
+  display: flex;
+  position: relative;
+  left: -300px;
+  top: 30px;
+  margin-top: -30px;
+
+  @media (min-width: 890px) {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+  }
+}
+
+.section {
+  padding-top: 24px;
+  padding-bottom: 48px;
+
+  background-color: var(--white);
+
+  @media (min-width: 1145px) {
+    padding-top: 56px;
+    padding-bottom: 60px;      
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin: 0 16px;
+
+  @media (min-width: 1145px) {
+    flex-direction: row;
+    column-gap: 158px;
+  }
+
+  @media (min-width: 1312px) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.title {
+  font-size: 28px;
+  list-style: 36px;
+  font-weight: 700;
+  letter-spacing: -4%;
+  text-transform: uppercase;
+
+  @media (min-width: 1145px) {
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -4%;
+}
+
+.numbersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  row-gap: 32px;
+
+  @media (min-width: 860px) {
+    justify-content: space-between;
+  }
+}
+
+.numbersCell {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 8px;
+}
+
+.cellTitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cellText {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: 500;
+  letter-spacing: -2%;
+  color: var(--purple-0);
+}
