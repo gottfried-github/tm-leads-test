@@ -3,9 +3,9 @@ import styles from './Footer.module.css'
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <div className={styles.contentContainer}>
+      <div className={styles.navContainer}>
         <nav className={styles.nav}>
-          <p>Быстрая навигация</p>
+          <p className={styles.navTitle}>Быстрая навигация</p>
           <div className={styles.navLinksContainer}>
             <a href="#" className={styles.navItem}>
               Цифры
@@ -27,7 +27,9 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <div className={styles.infoContainer}>
+      </div>
+      <div className={styles.infoContainer}>
+        <div className={styles.info}>
           <img src="/logo.png" alt="logo" className={styles.logo} />
           <p className={styles.copyright}>© 2022 TradeBlade. All rights reserved</p>
         </div>
