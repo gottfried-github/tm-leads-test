@@ -1,0 +1,25 @@
+.container {
+  height: 354px;
+  border-bottom: 5px solid var(--purple-0);
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-rows: auto 226px;
+  margin: 0 16px;
+
+  @media (min-width: 1312px) {
+    grid-template-columns: 1fr 492px;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.infoContainer {
+  border-top: 1px solid var(--white);
+
+  @media (min-width: 1312px) {
+    border-top: none;
+    border-left: 1px solid var(--white);
+  }
+}

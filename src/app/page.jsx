@@ -11,6 +11,7 @@ import TarifsSection from './components/TarifsSection/TarifsSection'
 import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection'
 import FaqSection from './components/FaqSection/FaqSection'
 import SignupSection from './components/SignupSection/SignupSection'
+import Footer from './components/Footer/Footer'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         <TestimonialsSection />
         <FaqSection />
         <SignupSection />
+        <Footer />
       </main>
       {isMobileMenuOpen ? <MobileMenu onClose={handleMenuClose} /> : null}
     </>
