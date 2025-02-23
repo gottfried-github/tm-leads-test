@@ -7,9 +7,10 @@ import HeroSection from './components/HeroSection/HeroSection'
 import NumbersSection from './components/NumbersSection/NumbersSection'
 import CompleteDealsSection from './components/CompleteDealsSection/CompleteDealsSection'
 import AboutSection from './components/AboutSection/AboutSection'
+import TarifsSection from './components/TarifsSection/TarifsSection'
 import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection'
 import FaqSection from './components/FaqSection/FaqSection'
-import TarifsSection from './components/TarifsSection/TarifsSection'
+import SignupSection from './components/SignupSection/SignupSection'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         <TarifsSection />
         <TestimonialsSection />
         <FaqSection />
+        <SignupSection />
       </main>
       {isMobileMenuOpen ? <MobileMenu onClose={handleMenuClose} /> : null}
     </>
