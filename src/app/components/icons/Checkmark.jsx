@@ -18,13 +18,13 @@ const Checkmark = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path={`url(#${clipPathId})`}>
+      <g clipPath={`url(#${clipPathId})`}>
         <path
           d="M2 6.5625L5.71231 10.2748L10.9623 2.39982"
           stroke="white"
           strokeWidth="1.4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
